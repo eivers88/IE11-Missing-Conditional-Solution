@@ -1,0 +1,38 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>IE11_Conditional_Fix</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="styles/main.css"/>
+
+        <script src="scripts/head.js"></script>
+    </head>
+    <body>
+
+        <div class="hero-unit">
+          <h1>IE 11 Conditional FIX</h1>
+          <p>You now have</p>
+          <ul>
+            <li id="IE_Call_Out"></li>
+          </ul>
+        </div>
+
+        <script>
+            window.onload = function(){
+                var IECallOut = document.getElementById('IE_Call_Out');
+                if(window.IE_Version){
+                    IECallOut.innerHTML = 'IE ' + window.IE_Version;
+                } else {
+                    IECallOut.innerHTML = 'A non IE browser';
+                }
+            }
+        </script>
+
+</body>
+</html>
