@@ -7,11 +7,6 @@ This solution was inspired by this current limitation of IE11: http://connect.mi
 
 This solution will not fix all conditional statements in your html document. It is designed to set IE classes on the html tag similar to many of the popular boilerplates out there.
 
-Example:
+See Example
 
-`<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->`
-
-The above comments will fail in IE11 emulation of older versions. Adding IE_Conditional_Fix.js to your page will fix this limitation in IE11.
+Make sure to add IE11_Conditional_Fix.js in the head before all other scripts
